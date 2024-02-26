@@ -1,0 +1,317 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main-body{
+    margin: 0 2%;
+}
+body{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background-color: white;
+    padding-top: 2px;
+    position: fixed;
+    width: 100%;
+    top:1%;
+    z-index: 1;
+    height: 10%;
+}
+.container{
+    width: 100%;
+    margin: 0px 0px;
+}
+.row::after{
+    /*whenever we use float property use this css*/
+    content: "";
+    display: block;
+    clear: both;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.col-1{
+    width: 60%;
+}
+.col-2{
+    width: 38%;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.search{
+    width: 75%;
+    margin-left: 2%;
+}
+.search input[type="text"]{
+    width: 80%;
+    background-color: rgb(233, 250, 252);
+    border-color: transparent;
+    padding-left: 5%;
+    font-size: 1em;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/54/54481.png");
+    height: 30px;
+    background-repeat: no-repeat;/*used to prevent a background image from repeating vertically and horizontally*/
+    background-position: left center;/*aligns background image to left and centers it in y axis*/
+    background-size: 16px 16px;/*set size of background image*/
+    background-position-x: 1%;/*1% from the left*/
+    border-radius: 5px;
+    margin-top: 10px;
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.col-2> ul> li{/*to select and style only the immediate child elements that are directly nested inside a parent element*/
+    display: inline-block;
+    width: 17%;
+    padding: 20px 3px;
+    font-weight: 400;
+    font-family: 1em sans-serif;
+    position: relative;
+}
+.col-2> ul> li> a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+#section-1{
+    background-color: rgb(230, 244, 245);
+    padding: 1%;
+    margin-top: 6%;
+}
+#section-1 .product{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    margin-left: 8px;
+}
+#section-1 .product img{
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+}
+#section-1 h4{
+    margin-top: 8px;
+    color: black;
+    font-family: 1em sans-serif;
+}
+#banner{
+    margin-top: 10px;
+}
+#maha-sale .container{
+    margin: 0px;
+}
+#maha-sale .row .prod-img{
+    display: inline-block;
+    width: 33%;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+#maha-sale .prod-img img{
+    height: 250px;
+    width: 100%;
+}
+#section-2{
+    background-color: white;
+    padding: 1% 0;
+    margin-bottom: 1%;
+}
+#section-2 h2{
+    margin-left: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+#section-2 h4{
+    margin-top: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+#section-2 .product{
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+    margin: 0 1.5%;
+    border-radius: 2%;
+    padding-bottom: 10px;
+    position: relative;
+}
+#section-2 .product img{
+    height: 180px;
+    width: 100%;
+    margin-top: 10px;
+}
+h3{
+    padding-top: 5px;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1145px){
+    #section-1 .product{
+        margin-left: 6px;
+    }
+    #section-1 .product img{
+        width: 50%;
+    }
+    #section-1 h4{
+        font-family: 0.8em sans-serif;
+    }
+    #maha-sale .row .prod-img{
+        width: 32.9%;
+        margin-left: 1px;
+    }
+}
+@media only screen and (min-width: 905px) and (max-width: 1000px){
+    #header{
+        padding-top: 2px;
+    }
+    .col-1{
+        width: 58%;
+    }
+    .col-2{
+        position: relative;
+        right: 21px;
+        width: 40%;
+    }
+    .logo img{
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    .search input[type="text"]{
+        background-size: 10px 10px;
+        margin-top: 5px;
+        height: 20px;
+    }
+    .col-2> ul> li{
+        width: 19%;
+        margin-top: 2%;
+        padding: 2px 0px;
+        font-family: 1em sans-serif;
+    }
+    #section-1 .product{
+        margin-left: 4px;
+    }
+    #section-1 .product img{
+        width: 45%;
+    }
+    #section-1 h4{
+        font-family: 0.6em sans-serif;
+    }
+    #maha-sale .row .prod-img{
+        width: 32.9%;
+        margin-left: 1px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 904px){
+    #header{
+        padding-top: 2px;
+    }
+    .col-1{
+        width: 45%;
+    }
+    .col-2{
+        position: relative;
+        right: 32px;
+        width: 48%;
+    }
+    .logo img{
+        margin-left: 8%;
+        width: 48px;
+        margin-top: 22%;
+    }
+    .search input[type="text"]{
+        background-size: 8px 8px;
+        background-position-x: left;
+        margin-top: 5px;
+        height: 20px;
+    }
+    .col-2> ul> li{
+        width: 15%;
+        margin-top: 2%;
+        padding: 2px 0px;
+        font-family: sans-serif;
+        font-size: x-small;
+    }
+    #section-1 .product{
+        margin-left: 2px;
+    }
+    #section-1 .product img{
+        width: 40%;
+    }
+    #section-1 h4{
+        font-family: sans-serif;
+        font-size:x-small;
+    }
+    #maha-sale .row .prod-img{
+        width: 32.6%;
+        margin-left: 1px;
+    }
+}
+@media only screen and (min-width: 520px) and (max-width: 600px){
+    #header{
+        padding-top: 2px;
+    }
+    .col-1{
+        width: 40%;
+        border: 2px solid red;
+    }
+    .col-2{
+        border: 2px solid red;
+        position: relative;
+        right: 10px;
+        width: 58%;
+    }
+    .logo img{
+        margin-left: 0px;
+        width: 48px;
+        margin-top: 22%;
+    }
+    .search input[type="text"]{
+        background-size: 8px 8px;
+        background-position-x: left;
+        margin-top: 5px;
+        height: 20px;
+    }
+    .col-2> ul> li{
+        border: 2px solid green;
+        width: 16%;
+        margin-top: 2%;
+        padding: 2px 0px;
+        font-family: sans-serif;
+        font-size: x-small;
+    }
+    #section-1 .product{
+        margin-left: 1px;
+    }
+    #section-1 .product img{
+        width: 30%;
+    }
+    #section-1 h4{
+        margin-top: 2px;
+        font-family: sans-serif;
+        font-size: 8px;
+    }
+    #maha-sale .row .prod-img{
+        width: 32.6%;
+        margin-left: 1px;
+    }
+}
+
